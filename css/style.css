@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+}
+
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.container {
+    height: 100%;
+}
+
+.hero{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/hero.jpg");
+    /*Set a specific height*/
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.hero-text {
+    text-align: justify;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.main-img {
+    width: 180px;
+    height: 180px;
+    border-radius: 80px;
+}
+
