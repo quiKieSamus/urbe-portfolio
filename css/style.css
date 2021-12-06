@@ -6,6 +6,7 @@
 html, body {
     height: 100%;
     margin: 0;
+    
 }
 
 .container {
@@ -31,9 +32,68 @@ html, body {
     color: white;
 }
 
+.btn-hero {
+    height: 40px;
+    border-radius: 5px;
+    background-color: darkblue;
+    color: white;
+    border: none;
+}
+
+.about {
+    margin: 20px auto 0 auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.about-img, .about-info {
+    margin: auto 10px;
+}
+
 .main-img {
     width: 180px;
     height: 180px;
     border-radius: 80px;
 }
+
+.projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    margin: auto 20px;
+}
+
+.project {
+    border: darkslategray 1px solid;
+}
+
+.project:hover {
+    border: 3px solid;
+    background-color: darkslateblue;
+    color: white;
+}
+
+a {
+    color: black;
+}
+
+.project-image {
+    width: 400px;
+    height: 240px;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .projects {
+        grid-template-columns: 1fr;
+        margin: 0;
+    }
+
+    .project-image {
+        width: 200px;
+        height: 140px;
+    }
+}
+
+
 
